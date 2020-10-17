@@ -14,7 +14,7 @@ import javax.websocket.server.PathParam;
 public class StudentController {
 
     @Autowired
-    StudentService1 studentService;
+    StudentService studentService;
 
     @GetMapping("/{id}")
     public ResponseEntity<Student> getStudent(@PathVariable int id){
